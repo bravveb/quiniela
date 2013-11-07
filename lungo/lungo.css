@@ -631,3 +631,53 @@ body[data-device="tablet"] > section[data-transition="slide"][data-direction="ba
 }@keyframes slideBackOutTablet{0%{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);opacity:1}
 100%{-webkit-transform:translateX(100%);-moz-transform:translateX(100%);-ms-transform:translateX(100%);-o-transform:translateX(100%);transform:translateX(100%);opacity:0}
 }
+/*------------------CUSTOMS CSS-------------------------------*/
+/*COLORES:
+#df7575  ROSA
+#3e7f9d  AZUL*/
+.limpiar{clear:both;}
+.seccion_login{
+    text-align:center;
+}
+.app_log{
+    background-color: #3e7f9d;
+}
+.art_login{
+    background-color: #3e7f9d;
+    color: #fff;
+}
+.fls_form_log{
+    background-color: #3e7f9d!important;
+    border: none!important;
+}
+.fls_form_log label{
+   color: #fff!important;
+}
+.fls_form_log input[type="text"]{
+    background-color: #fff!important;
+    border: solid 1px #df7575!important;
+    font-size: 1.2em!important;
+    font-weight: bold!important;
+    color: #DF7575!important;
+}
+.fls_form_log input[type="password"]{
+    background-color: #fff!important;
+    border: solid 1px #df7575!important;
+    font-size: 1.2em!important;
+    font-weight: bold!important;
+    color: #DF7575!important;
+}
+.fls_form_log input[type="button"]{
+    background: #DF7575;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #FFF;
+    width: 50%;
+    padding: 6px;
+    padding-top: 8px;
+    border: solid 1px #FFF;
+}
+.fls_form_log input[type="checkbox"]{
+    float: left!important;
+    margin-left: 15px!important;
+}
