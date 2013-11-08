@@ -638,6 +638,10 @@ body[data-device="tablet"] > section[data-transition="slide"][data-direction="ba
 .limpiar{clear:both;}
 .seccion_login{
     text-align:center;
+    padding-top: 25%;
+}
+.seccion_login h1{
+    font
 }
 .app_log{
     background-color: #3e7f9d;
@@ -680,4 +684,8 @@ body[data-device="tablet"] > section[data-transition="slide"][data-direction="ba
 .fls_form_log input[type="checkbox"]{
     float: left!important;
     margin-left: 15px!important;
+}
+.recordar{
+    margin-top: 21px!important;
+    font-weight: bold!important;
 }
