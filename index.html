@@ -11,7 +11,7 @@
 </head>
  
 <body class="app_log">
-    <section id="main_section" class="seccion_login">
+    <section id="main_login" class="seccion_login" data-transition="slide">
         <article id="login" class="art_login">
             <h1>QUINIELATOR</h1>
             <div class="form">
@@ -25,10 +25,12 @@
                         <input type="button" value="ENTRAR">
                     </fieldset>
                 </form>
-                <a data-view-article="registro" data-icon="forward">&iquest;Todavia no estas registrado?</a>
+                <a data-view-section="main_registro" data-icon="forward">&iquest;Todavia no estas registrado?</a>
             </div>
         </article>
-        <article id="registro" class="art_login" >
+    </section>
+    <section id="main_registro" class="seccion_login" data-transition="slide">
+        <article id="registro" class="art_login">
             <h1>QUINIELATOR</h1>
             <div class="form">
                 <form>
@@ -40,7 +42,7 @@
                         <input type="button" value="ENTRAR">
                     </fieldset>
                 </form>
-                <a data-view-article="login" data-icon="forward" >Volver a login</a>
+                <a data-view-section="main_login" data-icon="forward" >Volver a login</a>
             </div>
         </article>
     </section>
