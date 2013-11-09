@@ -6,7 +6,6 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="lungo/lungo.css">
     <link rel="stylesheet" href="lungo/lungo.icon.css">
-    <link rel="stylesheet" href="lungo/lungo.css">
     <link rel="stylesheet" href="lungo/lungo.theme.css">
 </head>
  
@@ -17,13 +16,13 @@
             <div class="form">
                 <form>
                     <fieldset class="fls_form_log">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contrase&ntilde;a">
+                        <input type="text" placeholder="Usuario" name="l_usuario" id="l_usuario">
+                        <input type="password" placeholder="Contrase&ntilde;a" name="l_password" id="l_password">
                         <div class="limpiar"></div>
                         <label class="anchor recordar">&iquest;Inicio automatico?</label><br/>
-                        <input type="checkbox" class="inline right" value="recordar" checked="checked"/>
+                        <input type="checkbox" value="recordar" checked="checked"/>
                         <div class="limpiar"></div><br/>
-                        <input type="button" value="ENTRAR">
+                        <input type="button" value="ENTRAR" onclick="validar_login(this.form);">
                     </fieldset>
                 </form>
                 <br/><br/>
@@ -44,7 +43,7 @@
                         <input type="button" value="ENTRAR">
                     </fieldset>
                 </form>
-                <a data-view-section="main_login" data-icon="forward" >Volver a login</a>
+                <a data-view-section="main_login">Volver a login</a>
             </div>
         </article>
     </section>
@@ -57,5 +56,6 @@
             name: 'inicio'
         });
     </script>
+    <script src="lib/validar.js"></script>
 </body>
 </html>
