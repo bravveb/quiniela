@@ -7,7 +7,7 @@ a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
 a:hover{opacity:1}
 img{border:0;-ms-interpolation-mode:bicubic;vertical-align:middle;font-size:0}
 table{border-collapse:collapse;border-spacing:0}
-th,td,caption{vertical-align:top;text-align:left}
+th,td,caption{vertical-align:top;text-align:left;}
 @media ="all"{::-webkit-scrollbar{width:1px;height:1px}
 }
 body,html{height:100%;width:100%;margin:0;padding:0;overflow:hidden}
@@ -144,7 +144,7 @@ footer nav.with-labels abbr{z-index:1;display:block !important;margin-top:-1.3em
 .layout > *{-webkit-box-flex:1;-moz-box-flex:1;-ms-box-flex:1;-o-box-flex:1;box-flex:1}
 .layout > [data-layout=secondary]{-webkit-box-flex:2;-moz-box-flex:2;-ms-box-flex:2;-o-box-flex:2;box-flex:2}
 .layout > [data-layout=primary]{-webkit-box-flex:3;-moz-box-flex:3;-ms-box-flex:3;-o-box-flex:3;box-flex:3}
-[data-view-menu]:after{content:"▼";position:relative;top:-5px;left:1px;font-size:11px}
+[data-view-menu]:after{content:"?";position:relative;top:-5px;left:1px;font-size:11px}
 [data-control=carousel]{overflow:hidden;list-style:none;margin:0}
 body > section > article.splash{text-align:center;padding:1.3333333333333333em;}
 body > section > article.splash .logo{max-width:192px;margin:20% 0 7.5% 0;font-size:2.2em}
@@ -193,7 +193,7 @@ form fieldset label.select,.form fieldset label.select{line-height:1.5em}
 .indented form fieldset > label:not(.absolute) + input:not([type="checkbox"]),.indented .form fieldset > label:not(.absolute) + input:not([type="checkbox"]),.indented form fieldset > label:not(.absolute) + label.select,.indented .form fieldset > label:not(.absolute) + label.select{width:75%}
 form label.select,.form label.select{position:relative;display:inline-block;font-size:inherit;line-height:inherit;padding:0 !important;}
 form label.select > select,.form label.select > select{-webkit-border-radius:0 !important;-moz-border-radius:0 !important;-ms-border-radius:0 !important;-o-border-radius:0 !important;border-radius:0 !important;margin:0;padding:0 .4em}
-form label.select:after,.form label.select:after{position:absolute;top:.15em;right:.3em;content:"▼";pointer-events:none;text-align:center}
+form label.select:after,.form label.select:after{position:absolute;top:.15em;right:.3em;content:"?";pointer-events:none;text-align:center}
 form input[type="range"],.form input[type="range"]{-webkit-appearance:none;outline:none;height:5px;width:100%;padding:0;border:none;margin:1em 0;background:#f00;}
 form input[type="range"]::-webkit-slider-thumb,.form input[type="range"]::-webkit-slider-thumb{position:relative;width:26px;height:26px;-webkit-appearance:none;border:none}
 form [data-progress],.form [data-progress]{width:100%;margin-bottom:.5em;}

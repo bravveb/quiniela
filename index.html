@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="lungo/lungo.css">
     <link rel="stylesheet" href="lungo/lungo.icon.css">
     <link rel="stylesheet" href="lungo/lungo.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css">
 </head>
  
 <body class="app_log">
@@ -47,14 +48,46 @@
             </div>
         </article>
     </section>
+    <section id="main_section" class="scroll" data-transition="slide">
+    <header data-title="QUINIELA">
+        <nav>
+            <button data-view-aside="features" data-icon="menu"></button>
+        </nav>
+    </header>
+    <article id="main-article" class="active indented">
+        <form class="ac-custom ac-cross" autocomplete="off">
+            <table class="tabla_quiniela">
+                <tr>
+                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
+                    <td class="celdas_qn"><ul><li><input id="cb1" name="cb1" type="checkbox"><label for="cb1">1</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb2" name="cb2" type="checkbox"><label for="cb1">X</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb3" name="cb3" type="checkbox"><label for="cb1">2</label></li></ul></td>
+                </tr>
+                <tr>
+                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
+                    <td class="celdas_qn"><ul><li><input id="cb4" name="cb4" type="checkbox"><label for="cb4">1</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb5" name="cb5" type="checkbox"><label for="cb5">X</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb6" name="cb6" type="checkbox"><label for="cb6">2</label></li></ul></td>
+                </tr>
+                <tr>
+                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
+                    <td class="celdas_qn"><ul><li><input id="cb7" name="cb7" type="checkbox"><label for="cb7">1</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb8" name="cb8" type="checkbox"><label for="cb8">X</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb9" name="cb9" type="checkbox"><label for="cb9">2</label></li></ul></td>
+                </tr>
+            </table>
+        </form>
+    </article>
+</section>
     <!-- Lungo - Dependencies -->
     <script src="lungo/quo.js"></script>
     <script src="lungo/lungo.js"></script>
+    <script src="lib/modernizr.custom.js"></script>
+    <script src="lib/svgcheckbx.js"></script>
     <!-- Lungo - Sandbox App -->
     <script>
         Lungo.init({
             name: 'inicio'
-           // resources: ['registro.html']
         });
     </script>
     <script src="lib/validar.js"></script>

@@ -1,64 +1,58 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Lungo 2.1 - Hello world!</title>
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="lungo/lungo.css">
-    <link rel="stylesheet" href="lungo/lungo.icon.css">
-    <link rel="stylesheet" href="lungo/lungo.css">
-    <link rel="stylesheet" href="lungo/lungo.theme.css">
-</head>
- 
-<body>
-     <aside id="features" data-transition="left">
-        <header data-title="Features">
-            <nav class="on-right">
-                <a href="#" data-icon="settings"><span class="icon"></span></a>
-            </nav>
-        </header>
+<aside id="features" data-transition="left">
+    <header data-title="Features">
+        <nav class="on-right">
+            <a href="#" data-icon="settings"><span class="icon"></span></a>
+        </nav>
+    </header>
 
-        <article class="list  active">
-            <ul>
-                <li data-view-article="main-article" data-icon="question-sign">
-                    <strong>Acerca de</strong>
-                </li>
-                <li data-view-article="main-article2" data-icon="user">
-                    <div class="tag on-right">5</div>
-                    <strong>Mi quiniela</strong>
-                </li>
-                <li data-view-article="main-article2" data-icon="list">
-                    <div class="tag on-right">22</div>
-                    <strong>Clasificacion global</strong>
-                </li>
-                <li data-view-article="main-article2" data-icon="info-sign">
-                    <div class="tag on-right">8</div>
-                    <strong>Escrutinio</strong>
-                </li>
-            </ul>
-        </article>
-    </aside>
-    <section id="main_section">
-        <header data-title="QUINIELA">
-            <nav>
-                <button data-view-aside="features" data-icon="menu"></button>
-            </nav>
-        </header>
-        <article id="main-article" class="active indented">
-            primer articulo
-        </article>
-        <article id="main-article2">
-            segundo articulo
-        </article>
-    </section>
-    <!-- Lungo - Dependencies -->
-    <script src="lungo/quo.js"></script>
-    <script src="lungo/lungo.js"></script>
-    <!-- Lungo - Sandbox App -->
-    <script>
-        Lungo.init({
-            name: 'features'
-        });
-    </script>
-</body>
-</html>
+    <article class="list  active">
+        <ul>
+            <li data-view-article="main-article" data-icon="question-sign">
+                <strong>Acerca de</strong>
+            </li>
+            <li data-view-article="main-article2" data-icon="user">
+                <div class="tag on-right">5</div>
+                <strong>Mi quiniela</strong>
+            </li>
+            <li data-view-article="main-article2" data-icon="list">
+                <div class="tag on-right">22</div>
+                <strong>Clasificacion global</strong>
+            </li>
+            <li data-view-article="main-article2" data-icon="info-sign">
+                <div class="tag on-right">8</div>
+                <strong>Escrutinio</strong>
+            </li>
+        </ul>
+    </article>
+</aside>
+<section id="main_section">
+    <header data-title="QUINIELA">
+        <nav>
+            <button data-view-aside="features" data-icon="menu"></button>
+        </nav>
+    </header>
+    <article id="main-article" class="active indented">
+        <form class="ac-custom ac-cross" autocomplete="off">
+            <table class="tabla_quiniela">
+                <tr>
+                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
+                    <td class="celdas_qn"><ul><li><input id="cb1" name="cb1" type="checkbox"><label for="cb1">1</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb2" name="cb2" type="checkbox"><label for="cb1">X</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb3" name="cb3" type="checkbox"><label for="cb1">2</label></li></ul></td>
+                </tr>
+                <tr>
+                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
+                    <td class="celdas_qn"><ul><li><input id="cb4" name="cb4" type="checkbox"><label for="cb4">1</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb5" name="cb5" type="checkbox"><label for="cb5">X</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb6" name="cb6" type="checkbox"><label for="cb6">2</label></li></ul></td>
+                </tr>
+                <tr>
+                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
+                    <td class="celdas_qn"><ul><li><input id="cb7" name="cb7" type="checkbox"><label for="cb7">1</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb8" name="cb8" type="checkbox"><label for="cb8">X</label></li></ul></td>
+                    <td class="celdas_qn"><ul><li><input id="cb9" name="cb9" type="checkbox"><label for="cb9">2</label></li></ul></td>
+                </tr>
+            </table>
+        </form>
+    </article>
+</section>
