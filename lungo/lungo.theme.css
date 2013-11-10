@@ -25,6 +25,7 @@ body .text.normal {
 }
 body .text.bold {
   font-weight: 700;
+  letter-spacing: 0.5px;
 }
 body .theme {
   background-color: THEME-light;
@@ -1010,6 +1011,7 @@ form input[type=checkbox]:checked:after,
 .notification .window.error small,
 .notification .window.success small {
   color: #bfbfbf;
+  letter-spacing: 0.5px;
 }
 .notification .window.error {
   border-bottom-color: #e74c3c;
@@ -1176,4 +1178,8 @@ body > section > article > .empty > strong {
     font-size: 1.3em;
     margin-bottom: 25px;
     letter-spacing: 1px;
+}
+.arreglo_btn_registro{
+    margin-bottom: 45px;
+    margin-top: 35px!important;
 }

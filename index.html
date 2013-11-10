@@ -30,30 +30,15 @@
             </div>
         </article>
     </section>
-    <section id="main_registro" class="seccion_login" data-transition="slide">
-        <article id="registro" class="art_login">
-            <h1>QUINIELATOR</h1>
-            <div class="form">
-                <form>
-                    <fieldset class="fls_form_log">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contrase&ntilde;a">
-                        <input type="password" placeholder="Repita la contrase&ntilde;a">
-                        <input type="text" placeholder="Correo">
-                        <input type="button" value="ENTRAR">
-                    </fieldset>
-                </form>
-                <a data-view-section="main_login">Volver a login</a>
-            </div>
-        </article>
-    </section>
+    
     <!-- Lungo - Dependencies -->
     <script src="lungo/quo.js"></script>
     <script src="lungo/lungo.js"></script>
     <!-- Lungo - Sandbox App -->
     <script>
         Lungo.init({
-            name: 'inicio'
+            name: 'inicio',
+            resources: ['registro.html']
         });
     </script>
     <script src="lib/validar.js"></script>
