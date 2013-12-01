@@ -1,95 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Inicio</title>
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="lungo/lungo.css">
-    <link rel="stylesheet" href="lungo/lungo.icon.css">
-    <link rel="stylesheet" href="lungo/lungo.theme.css">
-    <link rel="stylesheet" type="text/css" href="css/component.css">
+    <!-- Need to get a proper redirect hooked up. Blech. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QUINIELATOR</title>
+    <link rel="stylesheet"  href="dependencies/jquery.mobile.structure-1.3.2.css">
+    <link rel="stylesheet"  href="dependencies/jquery.mobile.theme-1.3.2.css">
+    <link rel="stylesheet"  href="dependencies/custom.css">
+    <script src="dependencies/jquery.js"></script>
+    <script src="dependencies/jquery.mobile-1.3.2.min.js"></script>
 </head>
- 
-<body class="app_log">
-    <section id="main_login" class="seccion_login scroll" data-transition="slide">
-        <article id="login" class="art_login">
-            <h1>QUINIELATOR</h1>
-            <div class="form">
-                <form>
-                    <fieldset class="fls_form_log">
-                        <input type="text" placeholder="Usuario" name="l_usuario" id="l_usuario">
-                        <input type="password" placeholder="Contrase&ntilde;a" name="l_password" id="l_password">
-                        <div class="limpiar"></div>
-                        <label class="anchor recordar">&iquest;Inicio automatico?</label><br/>
-                        <input type="checkbox" value="recordar" checked="checked"/>
-                        <div class="limpiar"></div><br/>
-                        <input type="button" value="ENTRAR" onclick="validar_login(this.form);">
-                    </fieldset>
-                </form>
-                <br/><br/>
-                <a data-view-section="main_registro">&iquest;Todavia no estas registrado?</a>
-            </div>
-        </article>
-    </section>
-    <section id="main_registro" class="seccion_login scroll" data-transition="slide">
-        <article id="registro" class="art_login">
-            <h1>QUINIELATOR</h1>
-            <div class="form">
-                <form>
-                    <fieldset class="fls_form_log">
-                        <input type="text" placeholder="Usuario" name="r_usuario" id="r_usuario">
-                        <input type="password" placeholder="Contrase&ntilde;a" name="r_password" id="r_password">
-                        <input type="password" placeholder="Repita la contrase&ntilde;a" name="rr_password" id="rr_password">
-                        <input type="text" placeholder="Correo" name="r_correo" id="r_correo">
-                        <input type="button" class="arreglo_btn_registro" value="REGISTRAR" onclick="validar_registro(this.form)">
-                    </fieldset>
-                </form>
-                <a data-view-section="main_login">Volver a login</a>
-            </div>
-        </article>
-    </section>
-    <section id="main_section" class="scroll" data-transition="slide">
-    <header data-title="QUINIELA">
-        <nav>
-            <button data-view-aside="features" data-icon="menu"></button>
-        </nav>
-    </header>
-    <article id="main-article" class="active indented">
-        <form class="ac-custom ac-cross" autocomplete="off">
+<body>
+<div data-role="page" id="portada" class="pagina_portada">
+    <div data-role="content">
+        <h1>QUINIELATOR</h1>
+        <h4>Cargando...</h4>
+        <a href="#login" data-transition="fade">Siguiente</a>
+    </div>
+</div>
+<div data-role="page" id="login" class="pagina_portada">
+    <div data-role="content">
+        <form id="form" name="form">
+            <input type="text" placeholder="Nick o Email">
+            <input type="password" placeholder="Contrase&ntilde;a">
+            <input type="button" value="ENTRAR">
+            <a href="#registro" data-transition="slidedown">A&uacute;n no te has registrado?</a><br/>
+            <a href="#inicio" data-transition="flip">INICIO</a>
+        </form>
+    </div>
+</div>
+<div data-role="page" id="registro" class="pagina_portada">
+    <div data-role="content">
+        <form id="form_r" name="form_r">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Nick">
+            <input type="password" placeholder="Contrase&ntilde;a">
+            <input type="password" placeholder="Repetir contrase&ntilde;a">
+            <input type="button" value="REGISTRAR">
+            <a href="#login" data-transition="slideup">Volver al login</a>
+        </form>
+    </div>
+</div>
+<div data-role="page" id="inicio">
+    <div data-role="panel" data-animate="overlay" id="mypanel" class="menu_lateral">
+        <div data-role="header" class="cabecera_menu">
+            <span>MENU</span>
+        </div>
+        <ul>
+            <li><a href="#registro"><div class="enlaces_menu">Mi quiniela</div></a></li>
+            <li><a href="#registro"><div class="enlaces_menu">Mis amigos</div></a></li>
+            <li><a href="#registro"><div class="enlaces_menu">Buscar amigos</div></a></li>
+            <li><a href="#registro"><div class="enlaces_menu">Cerrar sesi&oacute;n</div></a></li>
+            <li><a href="#registro"><div class="enlaces_menu">Salir</div></a></li>
+        </ul>
+    </div>
+    <div data-role="header" class="cabecera">
+        <a href="#mypanel" class="enlace_menu">&nbsp;</a><span>QUINIELATOR</span>
+    </div>
+    <div data-role="content">
+       <form>
             <table class="tabla_quiniela">
                 <tr>
                     <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
-                    <td class="celdas_qn"><ul><li><input id="cb1" name="cb1" type="checkbox"><label for="cb1">1</label></li></ul></td>
-                    <td class="celdas_qn"><ul><li><input id="cb2" name="cb2" type="checkbox"><label for="cb1">X</label></li></ul></td>
-                    <td class="celdas_qn"><ul><li><input id="cb3" name="cb3" type="checkbox"><label for="cb1">2</label></li></ul></td>
-                </tr>
-                <tr>
-                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
-                    <td class="celdas_qn"><ul><li><input id="cb4" name="cb4" type="checkbox"><label for="cb4">1</label></li></ul></td>
-                    <td class="celdas_qn"><ul><li><input id="cb5" name="cb5" type="checkbox"><label for="cb5">X</label></li></ul></td>
-                    <td class="celdas_qn"><ul><li><input id="cb6" name="cb6" type="checkbox"><label for="cb6">2</label></li></ul></td>
-                </tr>
-                <tr>
-                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
-                    <td class="celdas_qn"><ul><li><input id="cb7" name="cb7" type="checkbox"><label for="cb7">1</label></li></ul></td>
-                    <td class="celdas_qn"><ul><li><input id="cb8" name="cb8" type="checkbox"><label for="cb8">X</label></li></ul></td>
-                    <td class="celdas_qn"><ul><li><input id="cb9" name="cb9" type="checkbox"><label for="cb9">2</label></li></ul></td>
+                    <td class="celdas_qn">
+                        <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk1" id="chk1">
+                            <label for="chk1" class="arreglo_ck">1</label></fieldset>
+                        </td>
+                        <td class="celdas_qn">
+                        <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk2" id="chk2">
+                            <label for="chk2" class="arreglo_ck">X</label></fieldset>
+                        </td>
+                        <td class="celdas_qn">
+                        <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk3" id="chk3">
+                            <label for="chk3" class="arreglo_ck">2</label></fieldset>
+                        </td>
                 </tr>
             </table>
         </form>
-    </article>
-</section>
-    <!-- Lungo - Dependencies -->
-    <script src="lungo/quo.js"></script>
-    <script src="lungo/lungo.js"></script>
-    <script src="lib/modernizr.custom.js"></script>
-    <script src="lib/svgcheckbx.js"></script>
-    <!-- Lungo - Sandbox App -->
-    <script>
-        Lungo.init({
-            name: 'inicio'
-        });
-    </script>
-    <script src="lib/validar.js"></script>
+        <form>
+</form>
+    </div>
+</div>
+    
 </body>
 </html>
