@@ -17,6 +17,18 @@
     color: #fff!important;
     line-height: 60px;
 }
+.pagina_portada .ui-btn-active{
+    background: #df7575;
+    border: solid 2px #fff;
+}
+.pagina_portada .ui-btn-up-c{
+    background: #df7575;
+    border: solid 2px #fff;
+}
+.pagina_portada .ui-btn-hover-c{
+    background: #df7575;
+    border: solid 2px #fff;
+}
 /*---------------------------------- CABECERA ----------------------------------*/
 .cabecera{
     background: #3e7f9d;
