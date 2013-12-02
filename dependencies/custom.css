@@ -12,6 +12,11 @@
     font-family: sans-serif;
     color: #fff;
 }
+.pagina_portada a{
+    text-decoration: none;
+    color: #fff!important;
+    line-height: 60px;
+}
 /*---------------------------------- CABECERA ----------------------------------*/
 .cabecera{
     background: #3e7f9d;
