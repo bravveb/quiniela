@@ -82,8 +82,14 @@
     margin: 0px;
     padding: 0px;
     vertical-align: -32px;
+    border: solid 2px #df7575;
 }
 .arreglo_ck{
     border-radius: 0px!important;
-    color: #fff!important;
+}
+.ui-checkbox-off{
+    background: #fff!important;
+}
+.ui-checkbox-off span{
+    color: #df7575;
 }
