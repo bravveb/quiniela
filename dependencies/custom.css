@@ -37,6 +37,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.cabecera img{vertical-align: middle;}
 /*88888888888888888888888888888888888888 MENU LATERAL 88888888888888888888888888*/
 .enlace_menu{
     background: #3e7f9d;
