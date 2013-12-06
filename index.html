@@ -50,7 +50,7 @@
             <span>MENU</span>
         </div>
         <ul>
-            <li><a href="#registro"><div class="enlaces_menu">Mi quiniela</div></a></li>
+            <li><a href="#inicio"><div class="enlaces_menu">Mi quiniela</div></a></li>
             <li><a href="#registro"><div class="enlaces_menu">Mis amigos</div></a></li>
             <li><a href="#registro"><div class="enlaces_menu">Buscar amigos</div></a></li>
             <li><a href="#registro"><div class="enlaces_menu">Cerrar sesi&oacute;n</div></a></li>
@@ -61,6 +61,9 @@
         <a href="#mypanel" class="enlace_menu">&nbsp;</a><span><img src="dependencies/images/quinielator.png" alt="quinielator"></span>
     </div>
     <div data-role="content">
+        <a href="#quiniela_anterior" data-transition="slide"><div class="anterior_quiniela" id="anterior_quiniela">&lt;&lt;Anterior</div></a>
+        <div class="fecha_quiniela">18/01/2013</div>
+        <a href="#quiniela_siguiente" data-transition="slide"><div class="anterior_quiniela" id="siguiente_quiniela">&gt;&gt;Siguiente</div></a>
        <form>
             <table class="tabla_quiniela">
                 <tr>
@@ -80,10 +83,50 @@
                 </tr>
             </table>
         </form>
-        <form>
-</form>
     </div>
 </div>
     
+    
+<div data-role="page" id="quiniela_anterior">
+    <div data-role="panel" data-animate="overlay" id="mypanel_ant" class="menu_lateral">
+        <div data-role="header" class="cabecera_menu">
+            <span>MENU</span>
+        </div>
+        <ul>
+            <li><a href="#inicio"><div class="enlaces_menu">Mi quiniela</div></a></li>
+            <li><a href="#registro"><div class="enlaces_menu">Mis amigos</div></a></li>
+            <li><a href="#registro"><div class="enlaces_menu">Buscar amigos</div></a></li>
+            <li><a href="#registro"><div class="enlaces_menu">Cerrar sesi&oacute;n</div></a></li>
+            <li><a href="#registro"><div class="enlaces_menu">Salir</div></a></li>
+        </ul>
+    </div>
+    <div data-role="header" class="cabecera">
+        <a href="#mypanel_ant" class="enlace_menu">&nbsp;</a><span><img src="dependencies/images/quinielator.png" alt="quinielator"></span>
+    </div>
+    <div data-role="content">
+        <a href="#quiniela_anterior" data-transition="slide"><div class="anterior_quiniela" id="volver_quiniela">&lt;&lt;Volver</div></a>
+        <div class="fecha_quiniela">18/01/2013</div>
+        <a href="#quiniela_siguiente" data-transition="slide"><div class="anterior_quiniela" id="siguiente_quiniela">&gt;&gt;Siguiente</div></a>
+       <form>
+            <table class="tabla_quiniela">
+                <tr>
+                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
+                    <td class="celdas_qn">
+                        <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk4" id="chk4">
+                        <label for="chk4" class="arreglo_ck">1</label></fieldset>
+                    </td>
+                    <td class="celdas_qn">
+                        <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk5" id="chk5">
+                        <label for="chk5" class="arreglo_ck">X</label></fieldset>
+                    </td>
+                    <td class="celdas_qn">
+                        <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk6" id="chk6">
+                        <label for="chk6" class="arreglo_ck">2</label></fieldset>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
 </body>
 </html>

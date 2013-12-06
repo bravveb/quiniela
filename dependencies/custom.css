@@ -106,3 +106,38 @@
 .ui-checkbox-off span{
     color: #df7575;
 }
+.anterior_quiniela{
+    color: #fff;
+    background: #df7575;
+    text-align: center;
+    width: 23%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid #df7575 2px;
+    float: left;
+}
+.siguiente_quiniela{
+    color: #fff;
+    background: #df7575;
+    text-align: center;
+    width: 23%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid #df7575 2px;
+    float: left;
+}
+.fecha_quiniela{
+    color: #3e7f9d;
+    text-align: center;
+    width: 48%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid #df7575 2px;
+    float: left;
+}
