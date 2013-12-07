@@ -26,7 +26,7 @@
             <input type="text" placeholder="Nick o Email">
             <input type="password" placeholder="Contrase&ntilde;a">
             <input type="button" value="ENTRAR">
-            <a href="#registro" data-transition="slidedown">A&uacute;n no te has registrado?</a><br/>
+            <a href="#registro" data-transition="slidedown">&iquest;A&uacute;n no te has registrado?</a><br/>
             <a href="#inicio" data-transition="flip">INICIO</a>
         </form>
     </div>
@@ -44,6 +44,7 @@
         </form>
     </div>
 </div>
+        
 <div data-role="page" id="inicio">
     <div data-role="panel" data-animate="overlay" id="mypanel" class="menu_lateral">
         <div data-role="header" class="cabecera_menu">
@@ -58,29 +59,55 @@
         </ul>
     </div>
     <div data-role="header" class="cabecera">
-        <a href="#mypanel" class="enlace_menu">&nbsp;</a><span><img src="dependencies/images/quinielator.png" alt="quinielator"></span>
+        <a href="#mypanel" class="enlace_menu">&nbsp;</a>
+        <span><img src="dependencies/images/quinielator.png" alt="quinielator"></span>
+        <a href="#mypanel" class="enlace_refrescar">&nbsp;</a>
     </div>
     <div data-role="content">
-        <a href="#quiniela_anterior" data-transition="slide"><div class="anterior_quiniela" id="anterior_quiniela">&lt;&lt;Anterior</div></a>
+        <a href="#quiniela_anterior" data-transition="slide"><div class="quinielas_a_s" id="anterior_quiniela">Anterior</div></a>
         <div class="fecha_quiniela">18/01/2013</div>
-        <a href="#quiniela_siguiente" data-transition="slide"><div class="anterior_quiniela" id="siguiente_quiniela">&gt;&gt;Siguiente</div></a>
+        <a href="#quiniela_siguiente" data-transition="slide"><div class="quinielas_a_s" id="siguiente_quiniela">Siguiente</div></a>
+        <div class="limpiar"></div>
        <form>
             <table class="tabla_quiniela">
-                <tr>
-                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
-                    <td class="celdas_qn">
-                        <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk1" id="chk1">
-                            <label for="chk1" class="arreglo_ck">1</label></fieldset>
+                <tbody>
+                    <tr>
+                        <td class="celdas_partidos">
+                            <span>real madrid - real sociedad</span><br/>
+                            <span>S17:30</span> <span>2-0</span>
                         </td>
                         <td class="celdas_qn">
-                        <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk2" id="chk2">
-                            <label for="chk2" class="arreglo_ck">X</label></fieldset>
+                            <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk1" id="chk1">
+                                <label for="chk1" class="arreglo_ck">1</label></fieldset>
+                            </td>
+                            <td class="celdas_qn">
+                            <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk2" id="chk2">
+                                <label for="chk2" class="arreglo_ck">X</label></fieldset>
+                            </td>
+                            <td class="celdas_qn">
+                            <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk3" id="chk3">
+                                <label for="chk3" class="arreglo_ck">2</label></fieldset>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="celdas_partidos">
+                            <span>1 2 3 4 5 6 7 8 - 1 2 3 4 5 6 7 8</span><br/>
+                            <span>S17:30</span> <span>2-0</span>
                         </td>
                         <td class="celdas_qn">
-                        <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk3" id="chk3">
-                            <label for="chk3" class="arreglo_ck">2</label></fieldset>
-                        </td>
-                </tr>
+                            <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk4" id="chk4">
+                                <label for="chk4" class="arreglo_ck">1</label></fieldset>
+                            </td>
+                            <td class="celdas_qn">
+                            <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk5" id="chk5">
+                                <label for="chk5" class="arreglo_ck">X</label></fieldset>
+                            </td>
+                            <td class="celdas_qn">
+                            <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk6" id="chk6">
+                                <label for="chk6" class="arreglo_ck">2</label></fieldset>
+                            </td>
+                    </tr>
+                </tbody>    
             </table>
         </form>
     </div>
@@ -104,13 +131,11 @@
         <a href="#mypanel_ant" class="enlace_menu">&nbsp;</a><span><img src="dependencies/images/quinielator.png" alt="quinielator"></span>
     </div>
     <div data-role="content">
-        <a href="#quiniela_anterior" data-transition="slide"><div class="anterior_quiniela" id="volver_quiniela">&lt;&lt;Volver</div></a>
-        <div class="fecha_quiniela">18/01/2013</div>
-        <a href="#quiniela_siguiente" data-transition="slide"><div class="anterior_quiniela" id="siguiente_quiniela">&gt;&gt;Siguiente</div></a>
+        <div class="fecha_quiniela_completa">18/01/2013</div>
        <form>
             <table class="tabla_quiniela">
                 <tr>
-                    <td class="celdas_partidos">EQUIPO1 - EQUIPO 2</td>
+                    <td class="celdas_partidos"><span>real madrid - real sociedad</span><span>60'</span><span>2-5</span></td>
                     <td class="celdas_qn">
                         <fieldset data-role="controlgroup" data-type="horizontal"><input type="checkbox" name="chk4" id="chk4">
                         <label for="chk4" class="arreglo_ck">1</label></fieldset>

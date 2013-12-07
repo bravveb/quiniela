@@ -6,6 +6,7 @@
             AZUL: #3e7f9d
             ROSA: #df7575
 */
+.limpiar{clear: both;}
 .pagina_portada{
     background: #3e7f9d;
     text-align: center;
@@ -44,6 +45,7 @@
     border: none;
     background: url('images/icons-36-white.png');
     background-position: 1876px;
+    padding-top: 6px;
 }
 .cabecera_menu{
     border: none;
@@ -78,9 +80,19 @@
     padding-bottom: 10px;
     padding-top: 10px;
 }
+.enlace_refrescar{
+    background: #3e7f9d;
+    border: none;
+    background: url('images/icons-36-white.png');
+    background-position: 1074px;;
+    padding-top: 6px;
+    float: right;
+}
 /*+++++++++++++++++++TABLA DE LA QUINIELA+++++++++++++++++++++++++++++++++++++++*/
 .tabla_quiniela{
     width: 100%;
+    border-spacing: 0;
+    margin-top: 15px;
 }
 .celdas_partidos{
     vertical-align: middle;
@@ -88,6 +100,9 @@
     font-weight: bold;
     margin: 0px;
     padding: 0px;
+    text-transform: capitalize;
+    border-bottom: dotted 1px #3e7f9d;
+    border-right: solid 1px #df7575;
 }
 .celdas_qn{
     width: 50px;
@@ -95,7 +110,8 @@
     margin: 0px;
     padding: 0px;
     vertical-align: -32px;
-    border: solid 2px #df7575;
+    border: solid 3px #df7575;
+    border-collapse: collapse;
 }
 .arreglo_ck{
     border-radius: 0px!important;
@@ -106,27 +122,15 @@
 .ui-checkbox-off span{
     color: #df7575;
 }
-.anterior_quiniela{
+.quinielas_a_s{
     color: #fff;
     background: #df7575;
     text-align: center;
     width: 23%;
     padding-left: 1%;
     padding-right: 1%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom: solid #df7575 2px;
-    float: left;
-}
-.siguiente_quiniela{
-    color: #fff;
-    background: #df7575;
-    text-align: center;
-    width: 23%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: solid #df7575 2px;
     float: left;
 }
@@ -136,8 +140,20 @@
     width: 48%;
     padding-left: 1%;
     padding-right: 1%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: solid #df7575 2px;
     float: left;
+    font-weight: bold;
+}
+.fecha_quiniela_completa{
+    color: #3e7f9d;
+    text-align: center;
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid #df7575 2px;
+    font-weight: bold;
 }
