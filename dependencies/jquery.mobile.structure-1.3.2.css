@@ -1162,6 +1162,8 @@ label.ui-submit { font-size: 16px; line-height: 1.4; font-weight: normal; margin
 .ui-controlgroup li {
 	-webkit-border-radius: inherit;
 	border-radius: inherit;
+        width: 35px;
+        height: 35px;
 }
 .ui-controlgroup-vertical .ui-btn.ui-first-child {
 	-webkit-border-top-left-radius: inherit;
@@ -1381,7 +1383,7 @@ label.ui-submit { font-size: 16px; line-height: 1.4; font-weight: normal; margin
 .ui-controlgroup-horizontal .ui-checkbox .ui-icon,
 .ui-controlgroup-horizontal .ui-radio .ui-icon { display: none; }
 .ui-controlgroup-horizontal .ui-checkbox .ui-btn-inner,
-.ui-controlgroup-horizontal .ui-radio .ui-btn-inner { padding: .6em 20px; }
+.ui-controlgroup-horizontal .ui-radio .ui-btn-inner { padding: .6em 12px; }
 .ui-controlgroup-horizontal .ui-checkbox .ui-mini .ui-btn-inner,
 .ui-controlgroup-horizontal .ui-radio .ui-mini .ui-btn-inner { padding: .55em 11px .5em; }
 /* input, label positioning */

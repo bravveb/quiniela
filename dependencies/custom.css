@@ -105,12 +105,12 @@
     border-right: solid 1px #df7575;
 }
 .celdas_qn{
-    width: 50px;
-    height: 33px;
+    width: 35px;
+    height: 39px;
     margin: 0px;
     padding: 0px;
     vertical-align: -32px;
-    border: solid 3px #df7575;
+    border: solid 3px #DF7575;
     border-collapse: collapse;
 }
 .arreglo_ck{
