@@ -92,7 +92,8 @@
 .tabla_quiniela{
     width: 100%;
     border-spacing: 0;
-    margin-top: 15px;
+    padding: 4px;
+    margin-top: 10px;
 }
 .celdas_partidos{
     vertical-align: middle;
